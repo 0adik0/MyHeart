@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:background="@drawable/bg_gradient"
+            android:padding="30dp">
+
+            <TextView
+                android:id="@+id/detailArticle_title_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                tools:text="Хроническая ишемическая болезнь сердца неуточненная" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/purple_100"
+            android:orientation="vertical"
+            android:padding="14dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/roboto"
+                android:text="@string/detail_article_screen_title"
+                android:textColor="@color/purple_300"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!--<androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@color/gray"
+                app:cardCornerRadius="10dp">
+
+                <ImageView
+                    android:background="@color/purple_100"
+                    android:src="@drawable/help_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="202dp" />
+
+                &lt;!&ndash;<TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Видео"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />&ndash;&gt;
+            </androidx.cardview.widget.CardView>-->
+
+            <WebView
+                android:id="@+id/detailArticle_webView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/purple_300"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

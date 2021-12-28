@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/cardStyle"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_reminder"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:selectableItemBackground"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:weightSum="10">
+
+    <TextView
+        android:id="@+id/nameIndicator"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="17dp"
+        android:layout_weight="3"
+        android:gravity="center_vertical"
+        android:text="Давление"
+        android:textColor="@color/purple_300"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="36dp"
+        android:layout_gravity="center"
+        android:layout_margin="4dp"
+        android:background="#5A4182" />
+
+    <TextView
+        android:id="@+id/currStats"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="8dp"
+        android:layout_weight="6"
+        android:gravity="center_vertical"
+        android:text="Текущее значение: "
+        android:textColor="@color/purple_300"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/more"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:src="@drawable/ic_purple_arrow_forward_" />
+
+
+</LinearLayout>

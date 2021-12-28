@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_1"
+    app:startDestination="@id/registerFragment1">
+    <fragment
+        android:id="@+id/registerFragment1"
+        android:name="com.health.my_heart.ui.register.registration.RegisterFragment1"
+        android:label="shag_1"
+        tools:layout="@layout/fragment_step_1" >
+        <action
+            android:id="@+id/action_open_register_fragment_2"
+            app:destination="@id/registerFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment2"
+        android:name="com.health.my_heart.ui.register.registration.RegisterFragment2"
+        android:label="shag_2"
+        tools:layout="@layout/fragment_step_2" >
+        <action
+            android:id="@+id/action_open_register_fragment_3"
+            app:destination="@id/registerFragment3" />
+        <argument
+            android:name="emailAddress"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment3"
+        android:name="com.health.my_heart.ui.register.registration.RegisterFragment3"
+        android:label="shag_3"
+        tools:layout="@layout/fragment_step_3" >
+        <argument
+            android:name="emailAddress"
+            app:argType="string" />
+    </fragment>
+</navigation>

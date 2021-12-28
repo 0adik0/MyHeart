@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.register.registration.RegisterFragment1">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/back_reg"
+                android:orientation="vertical"
+                tools:ignore="MissingConstraints">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/roboto"
+                    android:gravity="center_horizontal"
+                    android:text="Шаг 1"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="36sp"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/roboto"
+                    android:gravity="center"
+                    android:text="Регистрация"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    tools:ignore="MissingConstraints" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/reg1" />
+
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/ed_inn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="50dp"
+                android:layout_marginTop="140dp"
+                android:background="@drawable/reg_edittext_style"
+                android:ems="10"
+                android:hint="849023759324"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:textColorHint="#9C9C9C"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+            <TextView
+                android:id="@+id/textIin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:fontFamily="@font/roboto"
+                android:text="ИИН"
+                android:textColor="@color/black"
+
+                app:layout_constraintBottom_toTopOf="@+id/ed_inn"
+                app:layout_constraintEnd_toEndOf="@+id/ed_inn"
+                app:layout_constraintHorizontal_bias="0.042"
+                app:layout_constraintStart_toStartOf="@+id/ed_inn" />
+
+            <TextView
+                android:id="@+id/textName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:text="Имя"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toTopOf="@+id/ed_Name"
+                app:layout_constraintEnd_toEndOf="@+id/ed_Name"
+                app:layout_constraintHorizontal_bias="0.042"
+                app:layout_constraintStart_toStartOf="@+id/ed_Name" />
+
+            <EditText
+                android:id="@+id/ed_Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/reg_edittext_style"
+                android:ems="10"
+                android:hint="Александр"
+                android:inputType="textPersonName"
+                android:textColor="@color/black"
+                android:textColorHint="#9C9C9C"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ed_inn" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:fontFamily="@font/roboto"
+                android:text="Фамилия"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toTopOf="@+id/ed_fam"
+                app:layout_constraintEnd_toEndOf="@+id/ed_fam"
+                app:layout_constraintHorizontal_bias="0.029"
+                app:layout_constraintStart_toStartOf="@+id/ed_fam" />
+
+            <EditText
+                android:id="@+id/ed_fam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="50dp"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/reg_edittext_style"
+                android:ems="10"
+                android:hint="Александров"
+                android:inputType="textPersonName"
+                android:textColor="@color/black"
+                android:textColorHint="#9C9C9C"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.194"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ed_Name" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="E-mail"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toTopOf="@+id/ed_mail"
+                app:layout_constraintEnd_toEndOf="@+id/ed_mail"
+                app:layout_constraintHorizontal_bias="0.026"
+                app:layout_constraintStart_toStartOf="@+id/ed_mail" />
+
+            <EditText
+                android:id="@+id/ed_mail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="50dp"
+                android:layout_marginTop="104dp"
+                android:background="@drawable/reg_edittext_style"
+                android:ems="10"
+                android:hint="Mail.ru"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/black"
+                android:textColorHint="#9C9C9C"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.501"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ed_fam" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Пароль"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toTopOf="@+id/ed_pas"
+                app:layout_constraintEnd_toEndOf="@+id/ed_pas"
+                app:layout_constraintHorizontal_bias="0.028"
+                app:layout_constraintStart_toStartOf="@+id/ed_pas" />
+
+            <EditText
+                android:id="@+id/ed_pas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="50dp"
+                android:background="@drawable/reg_edittext_style"
+                android:ems="10"
+                android:hint="@string/password_dots"
+                android:inputType="textPassword"
+                android:textColor="@color/black"
+                android:textColorHint="#9C9C9C"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ed_mail" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Повторите пароль"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toTopOf="@+id/ed_pas2"
+                app:layout_constraintEnd_toEndOf="@+id/ed_pas2"
+                app:layout_constraintHorizontal_bias="0.032"
+                app:layout_constraintStart_toStartOf="@+id/ed_pas2" />
+
+            <EditText
+                android:id="@+id/ed_pas2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="50dp"
+                android:layout_marginTop="56dp"
+                android:background="@drawable/reg_edittext_style"
+                android:ems="10"
+                android:hint="•••••••••"
+                android:inputType="textPassword"
+                android:textColor="@color/black"
+                android:textColorHint="#9C9C9C"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.249"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ed_pas" />
+
+            <Button
+                android:id="@+id/btn_reg"
+                android:layout_width="279dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="40dp"
+                android:background="@drawable/style_btn"
+                android:text="Продолжить"
+                android:textAllCaps="false"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ed_pas2"
+                app:layout_constraintVertical_bias="0.207" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+</FrameLayout>

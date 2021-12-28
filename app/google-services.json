@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1013526178804",
+    "project_id": "myheart-5214d",
+    "storage_bucket": "myheart-5214d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1013526178804:android:1f942d9127a7ea28ee27a1",
+        "android_client_info": {
+          "package_name": "com.health.my_heart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1013526178804-ea183p5a0tv23keoa6vnffrkjemqd4q8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUCVZrWVQt5CsgFzeePkI-Caw9KDH1Lgg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1013526178804-ea183p5a0tv23keoa6vnffrkjemqd4q8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

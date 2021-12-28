@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    app:cardCornerRadius="8dp"
+    android:layout_marginBottom="24dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:selectableItemBackground">
+
+    <LinearLayout
+        android:id="@+id/articleCard_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/purple_150"
+        android:orientation="vertical"
+        tools:background="@drawable/bg_heart_diseases">
+
+        <TextView
+            android:id="@+id/itemCard_title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/purple_100"
+            android:textSize="18sp"
+            tools:text="Болезни сердца" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

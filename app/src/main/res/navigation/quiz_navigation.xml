@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/quiz_navigation.xml"
+    app:startDestination="@id/quizFragment">
+
+    <fragment
+        android:id="@+id/quizFragment"
+        android:name="com.health.my_heart.ui.quiz.QuizFragment"
+        android:label="QuizFragment" >
+        <action
+            android:id="@+id/action_open_result"
+            app:destination="@id/quizResultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/quizResultFragment"
+        android:name="com.health.my_heart.ui.quiz.QuizResultFragment"
+        android:label="QuizResultFragment" />
+</navigation>

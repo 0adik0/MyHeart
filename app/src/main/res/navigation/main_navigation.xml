@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/main_navigation.xml"
+    app:startDestination="@id/destination_home">
+
+    <fragment
+        android:id="@+id/destination_home"
+        android:name="com.health.my_heart.ui.home.HomeFragment"
+        android:label="@string/home" >
+        <action
+            android:id="@+id/action_articles"
+            app:destination="@id/destination_articles" />
+        <action
+            android:id="@+id/action_profile"
+            app:destination="@id/destination_profile" />
+        <action
+            android:id="@+id/action_calendar"
+            app:destination="@id/destination_calendar" />
+        <action
+            android:id="@+id/action_analyzes"
+            app:destination="@id/destination_analyzes" />
+    </fragment>
+    <fragment
+        android:id="@+id/destination_articles"
+        android:name="com.health.my_heart.ui.content.ContentFragment"
+        android:label="@string/content">
+        <action
+            android:id="@+id/action_profile"
+            app:destination="@id/destination_profile" />
+        <action
+            android:id="@+id/action_home"
+            app:destination="@id/destination_home" />
+        <action
+            android:id="@+id/action_analyzes"
+            app:destination="@id/destination_analyzes" />
+        <action
+            android:id="@+id/action_calendar"
+            app:destination="@id/destination_calendar" />
+        <action
+            android:id="@+id/action_open_categories"
+            app:destination="@id/destination_categories" />
+        <action
+            android:id="@+id/action_destination_articles_to_fragmentFoodRecommendations"
+            app:destination="@id/destination_food" />
+    </fragment>
+    <fragment
+        android:id="@+id/destination_analyzes"
+        android:name="com.health.my_heart.ui.analyzes.AnalyzesFragment"
+        android:label="@string/analyzes" >
+        <action
+            android:id="@+id/action_home"
+            app:destination="@id/destination_home" />
+        <action
+            android:id="@+id/action_calendar"
+            app:destination="@id/destination_calendar" />
+        <action
+            android:id="@+id/action_articles"
+            app:destination="@id/destination_articles" />
+        <action
+            android:id="@+id/action_profile"
+            app:destination="@id/destination_profile" />
+        <action
+            android:id="@+id/action_open_analyze"
+            app:destination="@id/destination_analyze" />
+    </fragment>
+    <fragment
+        android:id="@+id/destination_profile"
+        android:name="com.health.my_heart.ui.profile.ProfileFragment"
+        android:label="@string/profile" >
+        <action
+            android:id="@+id/action_home"
+            app:destination="@id/destination_home" />
+        <action
+            android:id="@+id/action_analyzes"
+            app:destination="@id/destination_analyzes" />
+        <action
+            android:id="@+id/action_articles"
+            app:destination="@id/destination_articles" />
+        <action
+            android:id="@+id/action_calendar"
+            app:destination="@id/destination_calendar" />
+        <action
+            android:id="@+id/action_edit_profile"
+            app:destination="@id/destination_edit_profile" />
+        <action
+            android:id="@+id/action_open_indicators"
+            app:destination="@id/destination_indicators" />
+    </fragment>
+    <fragment
+        android:id="@+id/destination_calendar"
+        android:name="com.health.my_heart.ui.calendar.CalendarFragment"
+        android:label="@string/calendar" >
+        <action
+            android:id="@+id/action_home"
+            app:destination="@id/destination_home" />
+        <action
+            android:id="@+id/action_analyzes"
+            app:destination="@id/destination_analyzes" />
+        <action
+            android:id="@+id/action_articles"
+            app:destination="@id/destination_articles" />
+        <action
+            android:id="@+id/action_profile"
+            app:destination="@id/destination_profile" />
+    </fragment>
+    <fragment
+        android:id="@+id/destination_edit_profile"
+        android:name="com.health.my_heart.ui.profile.edit.EditProfileFragment"
+        android:label="@string/profile" />
+    <fragment
+        android:id="@+id/destination_indicators"
+        android:name="com.health.my_heart.ui.profile.indicators.IndicatorsFragment"
+        android:label="@string/profile" >
+        <action
+            android:id="@+id/action_open_more"
+            app:destination="@id/destination_indicator" />
+    </fragment>
+    <fragment
+        android:id="@+id/destination_indicator"
+        android:name="com.health.my_heart.ui.profile.indicators.indicator.IndicatorFragment"
+        android:label="@string/profile">
+        <argument
+            android:name="indicatorName"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/destination_categories"
+        android:name="com.health.my_heart.ui.content.categories.CategoriesFragment"
+        android:label="@string/content" >
+        <action
+            android:id="@+id/action_open_detail_article"
+            app:destination="@id/destination_detail_article" />
+        <argument
+            android:name="contentType"
+            app:argType="com.health.my_heart.domain.model.ContentType" />
+    </fragment>
+    <fragment
+        android:id="@+id/destination_detail_article"
+        android:name="com.health.my_heart.ui.content.categories.DetailArticleFragment"
+        android:label="@string/content" >
+        <argument
+            android:name="articleTitle"
+            app:argType="string" />
+        <argument
+            android:name="refId"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/destination_analyze"
+        android:name="com.health.my_heart.ui.analyzes.AnalyzeFragment"
+        android:label="@string/analyzes" />
+    <fragment
+        android:id="@+id/destination_food"
+        android:name="com.health.my_heart.ui.content.FragmentFoodRecommendations"
+        android:label="@string/content" >
+        <action
+            android:id="@+id/action_open_detail_food"
+            app:destination="@id/destination_food_detail" />
+    </fragment>
+    <fragment
+        android:id="@+id/destination_food_detail"
+        android:name="com.health.my_heart.ui.content.FragmentDetailFoodRecommendations"
+        android:label="@string/content">
+        <argument
+            android:name="imageRes"
+            app:argType="integer" />
+    </fragment>
+</navigation>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.health.my_heart.ui.register.login.LoginFragment">
+
+    <TextView
+        android:id="@+id/login_mail_text"
+        style="@style/base_text_view_title_style"
+        android:text="@string/e_mail"
+        app:layout_constraintBottom_toTopOf="@+id/login_mail_et"
+        app:layout_constraintEnd_toEndOf="@+id/login_mail_et"
+        app:layout_constraintHorizontal_bias="0.031"
+        app:layout_constraintStart_toStartOf="@+id/login_mail_et" />
+
+    <EditText
+        android:id="@+id/login_mail_et"
+        style="@style/base_edit_text_style"
+        android:layout_margin="40dp"
+        android:hint="@string/email_hint"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/login_password_text"
+        style="@style/base_text_view_title_style"
+        android:text="@string/password"
+        app:layout_constraintBottom_toTopOf="@+id/login_password_et"
+        app:layout_constraintEnd_toEndOf="@+id/login_password_et"
+        app:layout_constraintHorizontal_bias="0.031"
+        app:layout_constraintStart_toStartOf="@+id/login_password_et" />
+
+    <EditText
+        android:id="@+id/login_password_et"
+        style="@style/base_edit_text_style"
+        android:layout_margin="40dp"
+        android:hint="@string/password_dots"
+        android:imeOptions="actionDone"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/login_mail_et" />
+
+    <TextView
+        android:id="@+id/login_forgotPassword_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
+        android:text="Забыли пароль?"
+        android:textColor="@color/pink"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/login_signIn_btn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
+        android:id="@+id/login_signIn_btn"
+        style="@style/base_button_style"
+        android:text="@string/sign_in"
+        android:textColor="@color/white"
+        app:initialCornerAngle="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.92"
+        app:spinning_bar_color="@color/white"
+        app:spinning_bar_padding="4dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

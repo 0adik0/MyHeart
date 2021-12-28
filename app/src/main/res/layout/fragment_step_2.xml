@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.register.registration.RegisterFragment2">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_reg"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/roboto"
+                android:gravity="center_horizontal"
+                android:text="Шаг 2"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="36sp"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/roboto"
+                android:gravity="center"
+                android:text="Параметры тела"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/reg2" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:text="Дата рождения"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/ed_Date"
+            app:layout_constraintEnd_toEndOf="@+id/ed_Date"
+            app:layout_constraintHorizontal_bias="0.038"
+            app:layout_constraintStart_toStartOf="@+id/ed_Date" />
+
+        <EditText
+            android:id="@+id/ed_Date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="50dp"
+            android:background="@drawable/reg_edittext_style"
+            android:ems="10"
+            android:hint="01.01.1999"
+            android:inputType="date"
+            android:textColor="@color/black"
+            android:textColorHint="#9C9C9C"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:text="Рост"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/ed_rost"
+            app:layout_constraintEnd_toEndOf="@+id/ed_rost"
+            app:layout_constraintHorizontal_bias="0.028"
+            app:layout_constraintStart_toStartOf="@+id/ed_rost" />
+
+        <EditText
+            android:id="@+id/ed_rost"
+            android:layout_margin="50dp"
+            android:ems="10"
+            android:hint="170 см"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ed_Date"
+            style="@style/base_edit_text_style" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:fontFamily="@font/roboto"
+            android:text="Вес"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/ed_ves"
+            app:layout_constraintEnd_toEndOf="@+id/ed_ves"
+            app:layout_constraintHorizontal_bias="0.031"
+            app:layout_constraintStart_toStartOf="@+id/ed_ves" />
+
+        <EditText
+            android:id="@+id/ed_ves"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="50dp"
+            android:background="@drawable/reg_edittext_style"
+            android:ems="10"
+            android:hint="65 кг"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:textColorHint="#9C9C9C"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.26"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ed_rost" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="40dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/style_btn"
+            android:fontFamily="@font/roboto"
+            android:text="Продолжить"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ed_ves"
+            app:layout_constraintVertical_bias="0.92" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>

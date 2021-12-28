@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient_2"
+    android:orientation="vertical"
+    android:weightSum="7">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="16dp"
+        android:layout_weight="6"
+        app:layout_constraintBottom_toTopOf="@+id/quizResult_continue_btn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/quizResult_diagnosis_tv"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_margin="8dp"
+                android:background="@drawable/bg_red"
+                android:fontFamily="@font/roboto"
+                android:gravity="center"
+                android:padding="20dp"
+                android:textColor="@color/white"
+                android:textSize="36dp"
+                android:textStyle="bold"
+                tools:text="@string/diagnosis_red_zone" />
+
+            <TextView
+                android:id="@+id/quizResult_description_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="70dp"
+                android:layout_marginRight="30dp"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                tools:text="@string/yellow_zone_description" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/quizResult_continue_btn"
+            style="@style/base_button_style"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+            android:text="@string/continue_text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+    </LinearLayout>
+</LinearLayout>

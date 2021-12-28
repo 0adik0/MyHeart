@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/purple_100">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/editProfile_back_btn"
+                android:layout_width="36dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_purple_circle"
+                android:padding="5dp"
+                android:src="@drawable/ic_arrow_back"
+                android:layout_margin="8dp" />
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_account_circle" />
+
+            <TextView
+                style="@style/edtHintStyle"
+                android:text="ИНН"/>
+
+            <EditText
+                android:id="@+id/editProfile_inn_et"
+                style="@style/edtStyle"
+                android:inputType="number"
+                android:hint="849023759324"/>
+
+            <TextView
+                style="@style/edtHintStyle"
+                android:text="Имя" />
+
+            <EditText
+                android:id="@+id/editProfile_name_et"
+                style="@style/edtStyle"
+                android:inputType="text"
+                android:hint="Александр"/>
+
+            <TextView
+                style="@style/edtHintStyle"
+                android:text="Фамилия" />
+
+            <EditText
+                android:id="@+id/editProfile_surname_et"
+                style="@style/edtStyle"
+                android:inputType="text"
+                android:hint="Александров"/>
+
+            <TextView
+                style="@style/edtHintStyle"
+                android:text="E-mail" />
+
+            <EditText
+                android:id="@+id/editProfile_email_et"
+                style="@style/edtStyle"
+                android:inputType="textEmailAddress"
+                android:hint="MyEmail.ru"/>
+
+            <TextView
+                style="@style/edtHintStyle"
+                android:text="Дата рождения" />
+
+            <EditText
+                android:id="@+id/editProfile_birthday_et"
+                style="@style/edtStyle"
+                android:inputType="date"
+                android:hint="01.01.1999"/>
+
+            <TextView
+                style="@style/edtHintStyle"
+                android:text="Рост" />
+
+            <EditText
+                android:id="@+id/editProfile_growth_et"
+                style="@style/edtStyle"
+                android:inputType="number"
+                android:hint="170 см"/>
+
+            <TextView
+                style="@style/edtHintStyle"
+                android:text="Вес" />
+
+            <EditText
+                android:id="@+id/editProfile_weight_et"
+                style="@style/edtStyle"
+                android:inputType="number"
+                android:hint="65 кг"
+                android:layout_marginBottom="30dp" />
+
+            <Button
+                android:id="@+id/editProfile_save_btn"
+                style="@style/base_button_style"
+                android:layout_marginTop="14dp"
+                android:text="@string/save" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.register.registration.RegisterFragment3"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/back_reg"
+                android:orientation="vertical"
+                tools:ignore="MissingConstraints">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/roboto"
+                    android:gravity="center_horizontal"
+                    android:text="Шаг 3"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="36sp"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/roboto"
+                    android:gravity="center"
+                    android:text="Заболевания"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    tools:ignore="MissingConstraints" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/reg3" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Отметьте заболевания которые у вас имеются"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+            <LinearLayout
+                android:id="@+id/checkBoxGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView12">
+
+                <CheckBox
+                    android:id="@+id/checkBox1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:button="@drawable/custome_radiobutton"
+                    android:fontFamily="@font/roboto"
+                    android:theme="@style/RadioButtonStyle"
+                    android:padding="5dp"
+                    android:text="Хроническая ишемическая болезнь сердца"
+                    android:textColor="@color/black" />
+
+                <CheckBox
+                    android:id="@+id/checkBox2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:theme="@style/RadioButtonStyle"
+                    android:button="@drawable/custome_radiobutton"
+                    android:fontFamily="@font/roboto"
+                    android:padding="5dp"
+                    android:text="Хроническая ишемическая болезнь сердца неуточненная."
+                    android:textColor="@color/black" />
+
+                <CheckBox
+                    android:id="@+id/checkBox3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/RadioButtonStyle"
+                    android:layout_margin="10dp"
+                    android:button="@drawable/custome_radiobutton"
+                    android:fontFamily="@font/roboto"
+                    android:padding="5dp"
+                    android:text="Другие формы хронической ишемической болезни сердца"
+                    android:textColor="@color/black" />
+
+                <CheckBox
+                    android:id="@+id/checkBox4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:button="@drawable/custome_radiobutton"
+                    android:fontFamily="@font/roboto"
+                    android:theme="@style/RadioButtonStyle"
+                    android:padding="5dp"
+                    android:text="Перенесенный в прошлом инфаркт миокарда"
+                    android:textColor="@color/black" />
+
+                <CheckBox
+                    android:id="@+id/checkBox5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:theme="@style/RadioButtonStyle"
+                    android:fontFamily="@font/roboto"
+                    android:padding="5dp"
+                    android:button="@drawable/custome_radiobutton"
+                    android:text="Атеросклеротическая болезнь сердца"
+                    android:textColor="@color/black" />
+
+                <CheckBox
+                    android:id="@+id/checkBox6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:button="@drawable/custome_radiobutton"
+                    android:theme="@style/RadioButtonStyle"
+                    android:fontFamily="@font/roboto"
+                    android:padding="5dp"
+                    android:text="Ишемическая кардиомиопатия"
+                    android:textColor="@color/black" />
+
+                <CheckBox
+                    android:id="@+id/checkBox7"
+                    android:layout_width="match_parent"
+                    android:theme="@style/RadioButtonStyle"
+                    android:button="@drawable/custome_radiobutton"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/roboto"
+                    android:padding="5dp"
+                    android:text="Другое"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/editTextTextMultiLine"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/reg_edittext_style"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="Напишите здесь болезнь сердца..."
+                android:textColorHint="@color/gray"
+                android:inputType="textMultiLine"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/checkBoxGroup"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <Button
+                android:id="@+id/btn_reg3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/style_btn"
+                android:text="Продолжить"
+                android:textAllCaps="false"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</FrameLayout>
